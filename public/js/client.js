@@ -7,6 +7,7 @@
 var final_transcript = '';
 var recognizing = false;
 var last10messages = []; //to be populated later
+var socket = io.connect("142.93.182.190:5000");
 
 if (!('webkitSpeechRecognition' in window)) {
   console.log("webkitSpeechRecognition is not available");
